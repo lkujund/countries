@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/_10dp">
+
+        <TextView
+            android:id="@+id/tvName"
+            android:textAlignment="center"
+            android:textSize="@dimen/_30sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="@string/sample_text" />
+
+        <ImageView
+            android:id="@+id/ivCoatOfArms"
+            tools:src="@drawable/whiteflag"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_300dp" />
+
+        <TextView
+            android:text="@string/coat_of_arms"
+            android:textAlignment="center"
+            android:textSize="@dimen/_25sp"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20dp">
+
+            <Button
+                android:autoLink="web"
+                android:id="@+id/btnMaps"
+                android:textSize="15sp"
+                android:text="@string/open_in_google_maps"
+                android:textColor="@android:color/background_light"
+                android:backgroundTint="@color/teal_700"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <ImageView
+                android:id="@+id/ivRead"
+                tools:src="@drawable/red_flag"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+
+        <TextView
+            android:text="@string/three_letter_country_code"
+            android:textSize="@dimen/_18sp"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tvCca3"
+            android:textSize="@dimen/_18sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="@string/sample_text" />
+
+        <TextView
+            android:text="@string/native_official_name_s"
+            android:textSize="@dimen/_18sp"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tvNativeName"
+            android:textSize="@dimen/_18sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="@string/sample_text" />
+
+        <TextView
+            android:text="@string/capital_city_or_cities"
+            android:textSize="@dimen/_18sp"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tvCapital"
+            android:textSize="@dimen/_18sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="@string/sample_text" />
+
+        <TextView
+            android:text="@string/languages"
+            android:textSize="@dimen/_18sp"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tvLanguages"
+            android:textSize="@dimen/_18sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="@string/sample_text" />
+
+        <TextView
+            android:text="@string/currency"
+            android:textSize="@dimen/_18sp"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tvCurrency"
+            android:textSize="@dimen/_18sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="@string/sample_text" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="@string/latitude"
+                android:textSize="@dimen/_18sp"
+                android:layout_weight="1"
+                android:textColor="@android:color/holo_blue_dark"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/tvLatitude"
+                android:textSize="@dimen/_18sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="@string/sample_text" />
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="@string/longitude"
+                android:textSize="@dimen/_18sp"
+                android:layout_weight="1"
+                android:textColor="@android:color/holo_blue_dark"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+
+            <TextView
+                android:id="@+id/tvLongitude"
+                android:textSize="@dimen/_18sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="@string/sample_text" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="@string/area"
+                android:textSize="@dimen/_18sp"
+                android:layout_weight="1"
+                android:textColor="@android:color/holo_blue_dark"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+
+            <TextView
+                android:id="@+id/tvArea"
+                android:textSize="@dimen/_18sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="@string/sample_text" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="@string/population"
+                android:textSize="@dimen/_18sp"
+                android:layout_weight="1"
+                android:textColor="@android:color/holo_blue_dark"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+
+            <TextView
+                android:id="@+id/tvPopulation"
+                android:textSize="@dimen/_18sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="@string/sample_text" />
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+</ScrollView>

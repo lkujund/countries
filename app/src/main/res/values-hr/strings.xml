@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="please_wait">Pričekajte</string>
+    <string name="no_internet">Nema interneta…</string>
+    <string name="app_info">Projekt za kolegij Izrada aplikacija za mobilne uređaje. Podaci za države se dohvaćaju preko REST Countries API te se lokalno pohranjuju pomoću SQLite baze podataka.</string>
+    <string name="about">O aplikaciji</string>
+    <string name="countries">Države</string>
+    <string name="exit">Izlaz</string>
+    <string name="really_exit_the_application">Sigurno želite izaći?</string>
+    <string name="cancel">Odustani</string>
+    <string name="name">Službeni naziv</string>
+    <string name="country">Država</string>
+    <string name="three_letter_country_code">Kod države</string>
+    <string name="native_official_name_s">Mjesni službeni naziv</string>
+    <string name="coat_of_arms">Grb</string>
+    <string name="capital_city_or_cities">Glavni grad/gradovi</string>
+    <string name="latitude">Geografska širina</string>
+    <string name="longitude">Geografska dužina</string>
+    <string name="area">Površina</string>
+    <string name="population">Broj stanovnika</string>
+    <string name="filter_countries_by_name">Pretraži po nazivu…</string>
+    <string name="currency">Valuta</string>
+    <string name="languages">Jezici</string>
+    <string name="open_in_google_maps">Otvori u Google Maps</string>
+    <string name="loading_countries">Učitavanje država</string>
+    <string name="version_1_0">Verzija 1.0</string>
+    <string name="settings">Postavke</string>
+    <string name="language_jezik">Language/Jezik</string>
+</resources>

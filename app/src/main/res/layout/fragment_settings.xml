@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".fragment.CountriesFragment">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:textAlignment="center"
+        android:textSize="@dimen/_40sp"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/_30sp"
+        android:text="@string/language_jezik"/>
+    <LinearLayout
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="match_parent">
+        <TextView
+            android:text="@string/en"
+            android:textAlignment="textEnd"
+            android:layout_weight="1"
+            android:textSize="@dimen/_30sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <RadioGroup
+            android:id="@+id/rgLanguage"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/rbEn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <RadioButton
+                android:id="@+id/rbHr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RadioGroup>
+        <TextView
+            android:layout_weight="1"
+
+            android:text="@string/hr"
+            android:textSize="@dimen/_30sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+</LinearLayout>
