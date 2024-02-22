@@ -46,6 +46,16 @@ fun Context.getBooleanPreference(key: String)
         = PreferenceManager.getDefaultSharedPreferences(this)
     .getBoolean(key, false)
 
+fun Context.getStringPreference(key: String)
+        = PreferenceManager.getDefaultSharedPreferences(this)
+    .getString(key, "en")
+
+fun Context.setStringPreference(key: String, value: String)
+        = PreferenceManager.getDefaultSharedPreferences(this)
+    .edit()
+    .putString(key, value)
+    .apply()
+
 fun callDelayed(delay: Long, work: () -> Unit) {
     Handler(Looper.getMainLooper()).postDelayed(
         work,

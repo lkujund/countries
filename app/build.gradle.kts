@@ -64,4 +64,7 @@ dependencies {
     // picasso
     implementation("com.squareup.picasso:picasso:2.71828")
     implementation("jp.wasabeef:picasso-transformations:2.4.0")
+
+    //notification
+    implementation("androidx.core:core-ktx:1.12.0")
 }

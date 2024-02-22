@@ -26,4 +26,6 @@
     <string name="version_1_0">Verzija 1.0</string>
     <string name="settings">Postavke</string>
     <string name="language_jezik">Language/Jezik</string>
+    <string name="content_title">Države</string>
+    <string name="tap_text">Dodirnite za povratak u aplikaciju</string>
 </resources>

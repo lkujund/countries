@@ -1,21 +1,17 @@
 package hr.algebra.countries.fragment
 
-import android.app.Activity
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.RadioGroup
-import android.widget.RadioGroup.OnCheckedChangeListener
 import androidx.fragment.app.Fragment
-import hr.algebra.countries.R
-import hr.algebra.countries.activity.HostActivity
+import hr.algebra.countries.activity.APP_LOCALE
 import hr.algebra.countries.databinding.FragmentSettingsBinding
+import hr.algebra.countries.framework.setStringPreference
 import java.util.Locale
 
 class SettingsFragment : Fragment() {
     private lateinit var binding: FragmentSettingsBinding
-
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -36,7 +32,7 @@ class SettingsFragment : Fragment() {
             Locale("hr")
         }
             Locale.setDefault(locale)
-
+            requireActivity().baseContext.setStringPreference(APP_LOCALE, locale.language)
             val resources = requireContext().resources
 
             configuration.locale = locale
@@ -50,6 +46,7 @@ class SettingsFragment : Fragment() {
                 .detach(this)
                 .attach(this)
                 .commit()
+
         }
     }
 }
